@@ -1,4 +1,6 @@
 .idea
 *pyc
 *~
-
+build/
+dist/
+high_level_markov_logic_network.egg-info/
