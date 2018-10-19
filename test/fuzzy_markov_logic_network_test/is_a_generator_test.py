@@ -1,4 +1,4 @@
-from fuzzy_markov_logic_network.is_a_generator import get_is_a_ground_atoms
+from high_level_markov_logic_network.fuzzy_markov_logic_network.is_a_generator import get_is_a_ground_atoms
 
 A = 'cup.n.01'
 CONCEPTS = ['cup.n.01', 'can.n.01']

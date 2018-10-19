@@ -1,4 +1,4 @@
-from ground_atom.ground_atom import GroundAtom
+from high_level_markov_logic_network.ground_atom import GroundAtom
 
 TEST_GROUND_ATOM_1 = 'test(test1)'
 TEST_GROUND_ATOM_2 = 'test(test1,test2)'

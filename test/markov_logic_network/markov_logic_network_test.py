@@ -3,7 +3,7 @@ from os.path import join, abspath,dirname
 from pracmln import PRACMLNConfig, MLN
 from pracmln.utils.project import MLNProject
 
-from markov_logic_network.markov_logic_network import MarkovLogicNetwork
+from high_level_markov_logic_network.markov_logic_network import MarkovLogicNetwork
 
 TEST_FILE_PATH = abspath(__file__)
 ROOT_PATH = dirname(TEST_FILE_PATH)

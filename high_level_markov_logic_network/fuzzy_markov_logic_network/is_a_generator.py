@@ -1,4 +1,4 @@
-from ground_atom.ground_atom import GroundAtom
+from high_level_markov_logic_network.ground_atom import GroundAtom
 from word_net import determine_path_similarity_between_two_concepts
 
 __IS_A__ = 'is_a'
