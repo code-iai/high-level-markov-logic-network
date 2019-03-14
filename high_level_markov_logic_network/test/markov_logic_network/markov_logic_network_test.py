@@ -20,3 +20,9 @@ def test_should_init_a_successful_markov_logic_network_object():
     assert isinstance(mln.pracmln_project, MLNProject)
     assert mln.__logic__ == 'FuzzyLogic'
     assert mln.__mln_name__ == 'grasping_type.mln'
+
+
+def test_should_learn_successfully_a_markov_logic_network():
+    mln = MarkovLogicNetwork(TEST_MLN_PATH)
+    mln.learn()
+    assert True
