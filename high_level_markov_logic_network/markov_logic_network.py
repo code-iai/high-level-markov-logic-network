@@ -1,6 +1,8 @@
 from pracmln.mlnquery import MLNQuery
+from pracmln.mlnlearn import MLNLearn
 from pracmln.utils.project import MLNProject
 from pracmln.mln.base import parse_mln
+from pracmln.mln.database import parse_db
 
 
 class MarkovLogicNetwork:
@@ -24,3 +26,19 @@ class MarkovLogicNetwork:
                              verbose=0)
 
         return mln_query.run()
+
+    def learn(self):
+        learn_config = self.pracmln_project.learnconf
+        logic = learn_config.config['logic']
+        grammar = learn_config.config['grammar']
+        mln_name = learn_config.config['mln']
+        db_name = learn_config.config['db']
+        db_content = self.pracmln_project.dbs.get(db_name)
+        mln_text = self.pracmln_project.mlns.get(mln_name)
+        parsed_mln = parse_mln(mln_text, logic=logic, grammar=grammar)
+        db = parse_db(parsed_mln, db_content)
+        mln_learn = MLNLearn(learn_config, mln=parsed_mln, db=db)
+
+        result = mln_learn.run()
+
+        return result
