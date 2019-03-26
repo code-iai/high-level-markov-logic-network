@@ -13,6 +13,7 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     url="https://github.com/code-iai/high-level-markov-logic-network",
     packages=setuptools.find_packages(exclude=("test",)),
+    install_requires=['pracmln==1.2.3', 'prac==1.0.0'],
     classifiers=[
         "Programming Language :: Python :: 2",
         "License :: OSI Approved :: MIT License",
