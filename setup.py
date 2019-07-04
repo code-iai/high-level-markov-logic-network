@@ -18,7 +18,8 @@ setuptools.setup(
                       'nltk == 3.2.2',
                       'graphviz == 0.5.2',
                       'num2words == 0.5.7',
-                      'word2number == 1.1'],
+                      'word2number == 1.1',
+                      'appdirs == 1.4.3'],
     classifiers=[
         "Programming Language :: Python :: 2",
         "License :: OSI Approved :: MIT License",
