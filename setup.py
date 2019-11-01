@@ -15,7 +15,7 @@ setuptools.setup(
     packages=setuptools.find_packages(exclude=("test",)),
     install_requires=['pracmln==1.2.3',
                       'PyYAML == 3.12',
-                      'nltk == 3.2.2',
+                      'nltk == 3.4.5',
                       'graphviz == 0.5.2',
                       'num2words == 0.5.7',
                       'word2number == 1.1',
