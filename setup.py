@@ -14,7 +14,7 @@ setuptools.setup(
     url="https://github.com/code-iai/high-level-markov-logic-network",
     packages=setuptools.find_packages(exclude=("test",)),
     install_requires=['pracmln==1.2.3',
-                      'PyYAML == 3.12',
+                      'PyYAML == 5.4',
                       'nltk == 3.2.2',
                       'graphviz == 0.5.2',
                       'num2words == 0.5.7',
